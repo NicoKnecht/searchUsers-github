@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,100&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.mainContainer {
+  background-color: #00AEC2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Lato', sans-serif;
+}
+
+.mainContainer .mainWrapper {
+  min-height: 100vh;
+  min-width: 32vw;
+  max-width: 50vw;
+}
+
+.mainContainer .mainWrapper .inputWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 30vh;
+  width: 100%;
+}
+
+.mainContainer .mainWrapper .inputWrapper .uNameInput {
+  margin: 2.5rem 0rem 1.5rem 0rem;
+  padding: 1rem 0rem;
+  padding-left: 0.5rem;
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+}
+
+.mainContainer .mainWrapper .inputWrapper .uNameInput::-webkit-input-placeholder {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.mainContainer .mainWrapper .inputWrapper .uNameInput:-ms-input-placeholder {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.mainContainer .mainWrapper .inputWrapper .uNameInput::-ms-input-placeholder {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.mainContainer .mainWrapper .inputWrapper .uNameInput::placeholder {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.mainContainer .mainWrapper .inputWrapper .searchBtn {
+  padding: 1rem 0.5rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 100%;
+  border: none;
+  background-color: #2EE4F2;
+  color: #007785;
+  outline: 0;
+}
+
+.mainContainer .mainWrapper .inputWrapper .searchBtn:active {
+  background-color: #7BF1FF;
+}
+
+.mainContainer .mainWrapper .userDataWrapper {
+  min-width: 100%;
+  color: #F7F7F7;
+  border: 4px solid rgba(30, 99, 107, 0.5);
+  border-radius: 5px;
+  padding-top: 7rem;
+  margin-top: 7rem;
+  padding-top: 6.5rem;
+  position: relative;
+}
+
+.mainContainer .mainWrapper .userDataWrapper .userImg {
+  display: none;
+  width: 8.5rem;
+  height: 8.5rem;
+  border-radius: 50%;
+  border: 3px solid rgba(0, 119, 133, 0.5);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  /*centrado con absolute*/
+}
+
+.mainContainer .mainWrapper .userDataWrapper .titleName {
+  text-align: center;
+}
+
+.mainContainer .mainWrapper .userDataWrapper .titleName .userNick {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 900;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid #F7F7F7;
+}
+
+.mainContainer .mainWrapper .userDataWrapper .userData {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.mainContainer .mainWrapper .userDataWrapper .userData:last-of-type {
+  padding-bottom: 2rem;
+}
+
+.mainContainer .mainWrapper .userDataWrapper .userData .dataTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+/*# sourceMappingURL=styles.css.map */
