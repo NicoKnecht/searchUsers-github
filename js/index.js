@@ -12,7 +12,7 @@ userFollowers = document.querySelector('#userFollowers');
 
 
 const searchUser = async () => {
-    const username = searchInput.value;// si no fuse un .value, podria poner la var dentro de async directamente como parametro
+    let username = searchInput.value;// si no fuse un .value, podria poner la var dentro de async directamente como parametro
     try {
         const url = `https://api.github.com/users/${username}`;
         const response = await fetch(url);// dentro del fech se podria poner un parametro objeto con method"get" etc
@@ -43,6 +43,7 @@ const showUser = (data) => {
     userFollowers.innerText = data.followers;
 
     userImg.src = data.avatar_url; // modifico el atributo src
+    searchInput.value = ""; // reseteamos input
 
 }
 const showNotFound = (data) => {
