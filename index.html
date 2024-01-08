@@ -1,46 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
-    <body class="mainContainer">
-        <main class="mainWrapper">
-            <section class="inputWrapper" >    
-                <input class="uNameInput" id="userNameInput" type="text" placeholder="type username..." >
-                <button class="searchBtn" id="searchButton" type="submit">Buscar usuario</button>
-            </section>
-            <section class="userDataWrapper">
-                
-                    <img src="" class="userImg" alt="" id="userImg">
-                    
-                    <div class="titleName">
-                        <h1  class="userNick" id="userNickname"></h1>
-                    </div>
-                    <div class="userData">
-                        <h3 class="dataTitle">Real Name:</h3>
-                        <span id="userRealname"></span>
-                    </div>
-                    
-                    <div class="userData">
-                        <h3 class="dataTitle">Location:</h3>
-                        <span id="userLocation"></span>
-                    </div>
-                    
-                    <div class="userData">
-                        <h3 class="dataTitle">Number of public repos:</h3>
-                        <span id="userPublicRepos"></span>
-                    </div>
-                    
-                    <div class="userData">
-                        <h3 class="dataTitle">Number of followers:</h3>
-                        <span id="userFollowers"></span>
-                    </div>
-            </section>   
-        </main>     
-        <script src="js/index.js"></script>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="mainContainer">
+    <main class="mainWrapper">
+        <section class="inputWrapper">
+            <input class="uNameInput" id="userNameInput" type="text" placeholder="type username...">
+            <button class="searchBtn" id="searchButton" type="submit">Buscar usuario</button>
+        </section>
+        <section class="userDataWrapper">
+
+            <img src="" class="userImg" alt="" id="userImg">
+
+            <div class="titleName">
+                <h1 class="userNick" id="userNickname"></h1>
+            </div>
+            <div class="userData">
+                <h3 class="dataTitle">Real Name:</h3>
+                <span id="userRealname"></span>
+            </div>
+
+            <div class="userData">
+                <h3 class="dataTitle">Location:</h3>
+                <span id="userLocation"></span>
+            </div>
+
+            <div class="userData">
+                <h3 class="dataTitle">Number of public repos:</h3>
+                <span id="userPublicRepos"></span>
+            </div>
+
+            <div class="userData">
+                <h3 class="dataTitle">Number of followers:</h3>
+                <span id="userFollowers"></span>
+            </div>
+            <ul id="suggestionsList" class="suggestionsList">Resultados similares:</ul>
+        </section>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+
 </html>

@@ -98,4 +98,8 @@
 .mainContainer .mainWrapper .userDataWrapper .userData .dataTitle {
   font-size: 1.2rem;
   font-weight: 600;
+}
+.mainContainer .mainWrapper .userDataWrapper .suggestionsList {
+  display: none;
+  padding: 1.5%;
 }/*# sourceMappingURL=styles.css.map */
