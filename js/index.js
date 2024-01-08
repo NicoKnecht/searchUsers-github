@@ -1,11 +1,11 @@
 const searchInput = document.querySelector('#userNameInput');
-searchButton = document.querySelector('#searchButton');
-userImg = document.querySelector('#userImg');
-userNickname = document.querySelector('#userNickname');
-userRealname = document.querySelector('#userRealname');
-userLocation = document.querySelector('#userLocation');
-userpublicRepos = document.querySelector('#userPublicRepos');
-userFollowers = document.querySelector('#userFollowers');
+const searchButton = document.querySelector('#searchButton');
+const userImg = document.querySelector('#userImg');
+const userNickname = document.querySelector('#userNickname');
+const userRealname = document.querySelector('#userRealname');
+const userLocation = document.querySelector('#userLocation');
+const userpublicRepos = document.querySelector('#userPublicRepos');
+const userFollowers = document.querySelector('#userFollowers');
 
 
 
@@ -63,5 +63,9 @@ const searchUserEnter = (event) => {
     }
 }
 
-searchButton.addEventListener("click", searchUser);
-searchInput.addEventListener("keydown", searchUserEnter);
+const init = () => {
+    searchButton.addEventListener("click", searchUser);
+    searchInput.addEventListener("keydown", searchUserEnter);
+}
+
+init();

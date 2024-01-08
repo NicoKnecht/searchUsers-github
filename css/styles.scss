@@ -14,10 +14,11 @@ $tertiary:#2EE4F2;
     display:flex;
     justify-content: center;
     font-family: 'Lato', sans-serif;
+    margin-bottom: 2%;
     .mainWrapper{
         min-height: 100vh;
-        min-width: 32vw;
-        max-width: 50vw;
+        min-width: 30vw;
+        max-width: 60vw;
         .inputWrapper{
             display:flex;
             flex-direction: column;
@@ -46,6 +47,11 @@ $tertiary:#2EE4F2;
                 background-color: $tertiary;
                 color: $secondary;
                 outline: 0;
+                &:hover{
+                    box-shadow: -1px -1px 13px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px -1px 13px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px -1px 13px 0px rgba(0,0,0,0.75);
+                }
 
                 &:active{
                      background-color: #7BF1FF;
