@@ -58,6 +58,31 @@ const showSimilarUsers = (similarUsers) => {
     suggestionsList.style.display = "block";
 };
 
+
+
+const showUser = (data) => {
+    document.querySelector(".userImg").style.display = "inline-block"// cambio display de img
+
+    userNickname.innerText = data.login;// el objeto data es el que tre los datos y, de ahi, extraigo porpiedades con la data
+    userRealname.innerText = data.name;
+    userLocation.innerText = data.location;
+    userpublicRepos.innerText = data.public_repos;
+    userFollowers.innerText = data.followers;
+
+    userImg.src = data.avatar_url; // modifico el atributo src
+    searchInput.value = ""; // reseteamos input
+
+}
+const showNotFound = (data) => {
+    userNickname.innerText = "No encontrado";
+    document.querySelector(".userImg").style.display = "none";
+    userRealname.innerText = "";
+    userLocation.innerText = "";
+    userpublicRepos.innerText = "";
+    userFollowers.innerText = "";
+
+}
+
 // Función principal 
 const searchUser = async () => {
     let username = searchInput.value.trim();// si no fuse un .value, podria poner la var dentro de async directamente como parametro
@@ -96,33 +121,10 @@ const searchUser = async () => {
     }
 }
 
-const showUser = (data) => {
-    document.querySelector(".userImg").style.display = "inline-block"// cambio display de img
-
-    userNickname.innerText = data.login;// el objeto data es el que tre los datos y, de ahi, extraigo porpiedades con la data
-    userRealname.innerText = data.name;
-    userLocation.innerText = data.location;
-    userpublicRepos.innerText = data.public_repos;
-    userFollowers.innerText = data.followers;
-
-    userImg.src = data.avatar_url; // modifico el atributo src
-    searchInput.value = ""; // reseteamos input
-
-}
-const showNotFound = (data) => {
-    userNickname.innerText = "No encontrado";
-    document.querySelector(".userImg").style.display = "none";
-    userRealname.innerText = "";
-    userLocation.innerText = "";
-    userpublicRepos.innerText = "";
-    userFollowers.innerText = "";
-
-}
 
 
 
 const init = () => {
-    // Agrega eventos al botón de búsqueda y al input para búsqueda al presionar Enter.
     searchButton.addEventListener("click", searchUser);
     searchInput.addEventListener("keydown", (event) => {
         if (event.keyCode === 13) {
