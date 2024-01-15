@@ -105,6 +105,12 @@ const searchUser = async () => {
         if (response.status == 200) {
             showUser(data);
 
+            // Búsqueda de usuarios similares y sugerencias.
+            const similarUsers = await searchSimilarUsers(username);
+            console.log("Usuarios similares:", similarUsers);
+            // Muestra sugerencias de usuarios similares en la interfaz.
+            showSimilarUsers(similarUsers);
+
         }
         else if (response.status == 404) {
             showNotFound(data);
