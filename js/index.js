@@ -66,20 +66,20 @@ const showUser = (data) => {
     userNickname.innerText = data.login;// el objeto data es el que tre los datos y, de ahi, extraigo porpiedades con la data
     userRealname.innerText = data.name;
     userLocation.innerText = data.location;
-    userpublicRepos.innerText = data.public_repos;
-    userFollowers.innerText = data.followers;
+    userpublicRepos.textContent = data.public_repos;
+    userFollowers.textContent = data.followers;
 
     userImg.src = data.avatar_url; // modifico el atributo src
     searchInput.value = ""; // reseteamos input
 
 }
 const showNotFound = (data) => {
-    userNickname.innerText = "No encontrado";
+    userNickname.textContent = "No encontrado";
     document.querySelector(".userImg").style.display = "none";
-    userRealname.innerText = "";
-    userLocation.innerText = "";
-    userpublicRepos.innerText = "";
-    userFollowers.innerText = "";
+    userRealname.textContent = "";
+    userLocation.textContent = "";
+    userpublicRepos.textContent = "";
+    userFollowers.textContent = "";
 
 }
 
